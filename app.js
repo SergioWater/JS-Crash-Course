@@ -79,12 +79,71 @@
 // let newArr = arr.filter(element => element < 50)
 //     console.log(newArr)
 
-let grades = ['A+', 'A', 'FAIL']
-// let newArr = grades.filter(element => element !== 'FAIL')
+// let grades = ['A+', 'A', 'FAIL']
+// // let newArr = grades.filter(element => element !== 'FAIL')
+// // console.log(newArr)
+// let good = []
+// for(let i = 0; i < grades.length; i++){
+//     if(grades[i] !== 'FAIL')
+//     good.push(grades[i])
+// }
+// console.log(good)
+
+
+// let arr = [1,4,9,16]
+
+// let newArr = arr.map(element => {
+//     console.log(element)
+//     return 12
+// })
 // console.log(newArr)
-let good = []
-for(let i = 0; i < grades.length; i++){
-    if(grades[i] !== 'FAIL')
-    good.push(grades[i])
+
+// let dollars = [1, 5, 10, 3]
+
+// // let cents = dollars.map((element) => {
+// //     return element * 100
+// // })
+// let cents = []
+// for(let i = 0; i < dollars.length; i++){
+//     cents.push(dollars[i] * 100)
+// }
+// console.log(cents)
+
+let user = [
+{
+    username: "David",
+    email: "123@gmail.com",
+    subStatus: "VIP",
+    password: "123",
+    discordID: "discord#001",
+    lessionsCompleted:[0,1]
+},
+{
+    username: "mitrie",
+    email: "mitrie@gmail.com",
+    subStatus: "VIP",
+    password: "123123",
+    discordID: "discord#001",
+    lessionsCompleted:[0,1]
+},
+{
+    username: "XEN",
+    email: "XEN@gmail.com",
+    subStatus: "VIP",
+    password: "123123",
+    discordID: "discord#001",
+    lessionsCompleted:[0,1]
 }
-console.log(good)
+]
+function login(email, password){
+    for(let i = 0; i < user.length; i++)
+    if(user[i].email === email){
+        if(user[i].password === password){
+            console.log('login')
+        }
+        else{
+            console.log("wrong password")
+        }
+    }
+}
+login("123@gmail.com", "1223");
