@@ -66,9 +66,18 @@
 // //     console.log(front[i])
 // // }
 
-function convert(C){
-    return C * 1.8 + 32
-}
-console.log(convert(0))
-console.log(convert(10))
-console.log(convert(30))
+// function convert(C){
+//     return C * 1.8 + 32
+// }
+// console.log(convert(0))
+// console.log(convert(10))
+// console.log(convert(30))
+
+let arr = [20, 30 ,100, 1002]
+
+
+let newArr = arr.filter((element) => {
+    console.log(element)
+    return element < 50
+})
+    console.log(newArr)
