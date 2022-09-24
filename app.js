@@ -76,8 +76,5 @@
 let arr = [20, 30 ,100, 1002]
 
 
-let newArr = arr.filter((element) => {
-    console.log(element)
-    return element < 50
-})
+let newArr = arr.filter(element => element < 50)
     console.log(newArr)
