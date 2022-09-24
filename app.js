@@ -73,8 +73,18 @@
 // console.log(convert(10))
 // console.log(convert(30))
 
-let arr = [20, 30 ,100, 1002]
+// let arr = [20, 30 ,100, 1002]
 
 
-let newArr = arr.filter(element => element < 50)
-    console.log(newArr)
+// let newArr = arr.filter(element => element < 50)
+//     console.log(newArr)
+
+let grades = ['A+', 'A', 'FAIL']
+// let newArr = grades.filter(element => element !== 'FAIL')
+// console.log(newArr)
+let good = []
+for(let i = 0; i < grades.length; i++){
+    if(grades[i] !== 'FAIL')
+    good.push(grades[i])
+}
+console.log(good)
