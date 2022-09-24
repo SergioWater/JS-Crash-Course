@@ -144,6 +144,22 @@ function login(email, password){
         else{
             console.log("wrong password")
         }
+        return;
     }
 }
 login("123@gmail.com", "1223");
+
+function register(username, email, password,subStatus,ID,LessonsCompleted){
+    console.log(email,password)
+    let user1 = {
+        email: email,
+        name: username,
+        password:  password,
+        subStatus: subStatus,
+        ID:ID
+
+    }
+    console.log(user1)
+    
+}
+register('lad','asd@email.com','123123','vip','12#001','0,1' )
