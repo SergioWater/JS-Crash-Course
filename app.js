@@ -45,18 +45,23 @@ console.log(strs)
 //     console.log(i)
 // }
 
-for(let i = 1; i <= 20; i++)
-{
-    if (i % 3 === 0 && i % 5 === 0){
-        console.log(`${i} --> Fontend Simplified`)
-    }
-    else if(i % 3 === 0){
-        console.log(`${i} --> Fontend`)
-    }
-    else if (i % 5 === 0){
-        console.log(`${i} --> Simplified`)
-    }
-    else{
-        console.log(`${i} --> ${i}`)
-    }
+// for(let i = 1; i <= 20; i++)
+// {
+//     if (i % 3 === 0 && i % 5 === 0){
+//         console.log(`${i} --> Fontend Simplified`)
+//     }
+//     else if(i % 3 === 0){
+//         console.log(`${i} --> Fontend`)
+//     }
+//     else if (i % 5 === 0){
+//         console.log(`${i} --> Simplified`)
+//     }
+//     else{
+//         console.log(`${i} --> ${i}`)
+//     }
+// }
+
+let front = "Fontend Simplified"
+for(let i = 0; i < front.length; i++){
+    console.log(front[i])
 }
